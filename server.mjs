@@ -3,8 +3,8 @@ const app = express()
 const port = process.env.PORT ||3000
 
 app.get('/', (req, res) => {
-    console.log('hello my dear friends:'+ req.ip);
-
+    console.log('response from jamal computer:'+ req.ip);
+res.send('response from jamal computer')
   res.send('Hello World!',+ req.ip);
 })
 
